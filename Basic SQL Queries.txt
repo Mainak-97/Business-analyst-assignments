@@ -1,0 +1,31 @@
+Basic SQL queries
+MCQs
+1.If you don’t specify ASC or DESC after a SQL ORDER BY clause, the following is used by default __ASC____________
+Answer- a) ASC
+2. What is the purpose of the SQL AS clause?
+Answer- a) The AS SQL clause is used to change the name of a column in the result set or to assign a name to a derived column.
+3)With SQL, how can you return all the records from a table named “Persons” sorted descending by “FirstName”?
+Answer- d) SELECT * FROM Persons ORDER BY FirstName DESC
+4)Which SQL statement is used to return only different values?
+Answer- c) SELECT DISTINCT
+5.SQL query to find all the cities whose humidity is 95.
+Answer- b) SELECT city FROM weather WHERE humidity = 95
+
+SQL code questions
+1. Write an SQL query to fetch unique names of DEPARTMENT from employees table.
+Answer-
+ select distinct(department_name) FROM sql_for_business_analytics.employees_1;
+2. We need  employee id of employee and  status year but named as Year with maximum years of service and show only 10 records.
+Answer-
+ SELECT employee_id, status_year AS maximum_years_of_service FROM sql_for_business_analytics.employees_1 LIMIT 10;
+3. Select details of employees having service length less than 20 years.
+Answer- 
+ SELECT * FROM sql_for_business_analytics.employees_1 where length_of_service < 20;
+4. Find the employee age with less age but more years of service.
+Answer- 
+ SELECT 
+	min(age) as Less_Age, max(length_of_service) as More_Of_Service_Year FROM sql_for_business_analytics.employees_1 
+5. Select the isolated job titles which have solemnly been terminated.
+Answer-
+Error query.
+
