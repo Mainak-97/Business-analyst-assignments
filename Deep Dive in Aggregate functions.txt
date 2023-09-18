@@ -1,0 +1,40 @@
+Aggregate Functions SQL
+
+Q- 1.Observe the given SQL query and choose the correct option.
+Answer-
+a) The query is syntactically correct but gives the wrong answer
+Q- 2.We apply the aggregate function to a group of sets of attributes using the _______ clause.
+Answer-
+a) group by
+Q- 3.The _____ aggregation operation adds up all the values of the attribute
+Answer-
+d) sum
+Q- 4. State true or false: Any attribute which is present in the having clause without being aggregated must not be present in the group by clause.
+Answer-
+b) False
+Q- 5. What values does the count(*) function ignore?
+Answer-
+b) Null values
+
+Data set SQL
+
+1) Write a SQL query to fetch the departments in upper case , then show the number of departments.
+Answer-
+SELECT distinct(UPPER(department_name)) as Department_In_UpperCase_And_Number_of_Departement FROM sql_for_business_analytics.employees_1 LIMIT 100;
+2) Find the maximum service length
+Answer-
+SELECT MAX(length_of_service) as Maximum_Service_Lenght FROM sql_for_business_analytics.employees_1 LIMIT 100;
+3) Find the number of employees belonging to each unique city.
+Answer-
+Select COUNT(DISTINCT (city_name, employee_id)) FROM sql_for_business_analytics.employees_1;
+4) Find the minimum and maximum age at which an employee was terminated.
+Answer-
+SELECT Year MIN(age) as minimum _age  ,MAX(age) as maximum _age FROM sql_for_business_analytics.employees_1 WHERE employee are ‘terminated’ GROUP BY year ORDER BY YEAR
+5) Calculate the average service length and find  those employees whose service length is greater than average.
+Answer-
+SELECT
+AVG (length_of_services) AS Average FROM sql_for_business_analytics.employees_1 GROUP BY employee_id HAVING employee_id > AVG (length_of_services);
+
+
+
+
