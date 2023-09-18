@@ -1,0 +1,17 @@
+﻿1) Images, PDF, movies cannot be stored in a database.
+Answer- b) False
+
+
+2) What is a database?
+Answer- c) Organized collection of data or information that can be accessed, updated, and managed
+
+
+3) Which of the following is a NoSQL Database Type?
+Answer- b) Document databases
+
+4) NoSQL databases are used mainly for handling large volumes of ______________ data.
+Answer- a) unstructured
+
+
+5) Which of the following are TCL commands?
+Answer- a)  COMMIT and ROLLBACK
